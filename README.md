@@ -12,7 +12,7 @@ This project serves a dual purpose:
 - Mathematical Model: Geometric Brownian Motion (GBM) utilizing Euler-Maruyama discretization.
 
 - High-Performance Computing: 
-    - Multi-threading: Scalable parallel execution using std::thread and std::future (Producer-Consumer pattern).
+    - Multi-threading: Scalable parallel execution using ```std::thread``` and ```std::future``` (Producer-Consumer pattern).
     - C++20: Utilizes Concepts, Coroutines (Generators), and Ranges for expressive, zero-overhead abstractions.
     - SIMD Optimization: Explicit vectorization (AVX2/AVX-512) for path generation (Planned).
 
