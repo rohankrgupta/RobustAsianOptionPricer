@@ -1,4 +1,4 @@
-# RobustAsianPricer: High-Performance Monte Carlo Option Pricing : 
+# RobustAsianPricer: High-Performance Monte Carlo Option Pricing
 RobustAsianPricer is a high-performance C++20 engine designed to price Arithmetic Asian Options using Monte Carlo simulations.
 
 This project serves a dual purpose:
