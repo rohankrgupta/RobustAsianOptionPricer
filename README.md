@@ -7,21 +7,21 @@ This project serves a dual purpose:
 
 ## Core Engine (C++) : 
 
-- Arithmetic Asian Options: Prices path-dependent options where the payoff depends on the average price over the option's life (unlike standard European options).
+- **Arithmetic Asian Options**: Prices path-dependent options where the payoff depends on the average price over the option's life (unlike standard European options).
 
-- Mathematical Model: Geometric Brownian Motion (GBM) utilizing Euler-Maruyama discretization.
+- **Mathematical Model**: Geometric Brownian Motion (GBM) utilizing Euler-Maruyama discretization.
 
-- High-Performance Computing: 
+- **High-Performance Computing**: 
     - Multi-threading: Scalable parallel execution using ```std::thread``` and ```std::future``` (Producer-Consumer pattern).
     - C++20: Utilizes Concepts, Coroutines (Generators), and Ranges for expressive, zero-overhead abstractions.
     - SIMD Optimization: Explicit vectorization (AVX2/AVX-512) for path generation (Planned).
 
-- Robustness & Analysis (Python Integration):
+- **Robustness & Analysis (Python Integration)**:
     - Adversarial Noise Injection: A configurable interface to perturb volatility surfaces and spot prices, simulating "black swan" micro-events to test model stability.
     - Data Pipeline: Fetches real-time market data (Spot, Risk-Free Rate, Implied Volatility) via ```yfinance```.
     - Visualization: Automated plotting of convergence rates and robustness metrics.
 
-- Tech Stack:
+- **Tech Stack**:
     - Language: C++20
     - Build System: CMake (3.15+)
     - Testing: GoogleTest (Unit Tests), Google Benchmark (Latency/Throughput)
