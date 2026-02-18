@@ -48,3 +48,21 @@ python3 python/robustness_analyzer.py --ticker NVDA --noise_level 0.05
 
 ## Performance Benchmarks
 (Coming soon: Comparison charts of Single-threaded vs Multi-threaded vs GPU implementations)
+
+## Future Work & Optimization Roadmap
+
+### 1. Variance Reduction Techniques
+To improve convergence rates beyond the standard $O(1/\sqrt{N})$, we plan to implement:
+* **Antithetic Variates:** Exploiting the symmetry of the Gaussian distribution by simulating pairs of paths $(Z, -Z)$ to reduce estimator variance.
+* **Control Variates:** Utilizing the **Geometric Asian Option** (which has an analytical closed-form solution via Black-Scholes) as a control variable to reduce the variance of the Arithmetic Asian estimator.
+
+### 2. Deterministic Reproducibility
+* **Thread-Local RNG Seeding:** Implementing a robust seeding strategy (e.g., `Seq = BaseSeed + ThreadID * Offset`) to ensure that `N` simulations produce the exact same result regardless of the number of threads used.
+* **Bit-Exact Replay:** Guaranteeing that a run with `--seed 1234` produces identical floating-point results across different architectures.
+
+### 3. Automated Validation Harness
+* **Sanity Checks:** Automated comparison of Monte Carlo prices against the **Geometric Asian Closed-Form** solution to detect regression.
+* **Greek Monotonicity Tests:** Unit tests that verify financial logic invariants:
+    * Call Price increases as Spot Price ($S_0$) increases.
+    * Call Price decreases as Strike Price ($K$) increases.
+    * Option Price increases as Volatility ($\sigma$) increases (Vega > 0).
