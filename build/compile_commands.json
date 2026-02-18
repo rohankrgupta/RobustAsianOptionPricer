@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/rohangupta/Desktop/Quant/CPP/build",
+  "command": "/usr/bin/clang++ -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -g -o CMakeFiles/app.dir/src/main.cpp.o -c /Users/rohangupta/Desktop/Quant/CPP/src/main.cpp",
+  "file": "/Users/rohangupta/Desktop/Quant/CPP/src/main.cpp",
+  "output": "/Users/rohangupta/Desktop/Quant/CPP/build/CMakeFiles/app.dir/src/main.cpp.o"
+}
+]

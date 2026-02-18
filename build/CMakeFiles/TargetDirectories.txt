@@ -1,0 +1,3 @@
+/Users/rohangupta/Desktop/Quant/CPP/build/CMakeFiles/app.dir
+/Users/rohangupta/Desktop/Quant/CPP/build/CMakeFiles/edit_cache.dir
+/Users/rohangupta/Desktop/Quant/CPP/build/CMakeFiles/rebuild_cache.dir

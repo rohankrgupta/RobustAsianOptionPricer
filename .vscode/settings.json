@@ -1,0 +1,10 @@
+{
+  "cmake.configureOnOpen": true,
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--compile-commands-dir=build",
+    "--query-driver=/usr/bin/clang++"
+  ]
+}
