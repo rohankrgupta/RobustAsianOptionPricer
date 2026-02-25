@@ -1,0 +1,5 @@
+# C++ build artifacts
+build/
+*.o
+*.exe
+*.out
